@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <h1>PokeDex</h1>
+
+    <div class="search-container">
+      <input type="text" id="searchBar" placeholder="Search for a Pokémon...">
+    </div>
+
+
+    <div class="buttons">
+      <button class="button" id="favoriteButton">💗</button>
+      <button class="button button-secondary" id="favoritesListButton">
+        Favorites List</button>
+    </div>
+
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+    <ol id="pokedex"></ol>
+    </div>>
+    <div id="poke_container" class="poke_container"></div>
+
+    
+    <ul id="pokedex"></ul>
+
+    <button class="scrollTopButton" onclick="scrollToTop()">
+      ▲</button>
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/sampleJSON.js"></script>
+    <script src="js/script.js"></script>
+
+  </body>
+</html>

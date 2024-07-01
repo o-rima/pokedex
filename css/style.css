@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: radial-gradient(#fafafa, #585858 ) 
+  fixed;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 2em;
+}
+
+#searchBar{
+    width: 50%;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+h1 {
+  letter-spacing: 3px;
+  margin-top: 1em;
+  font-family: fantasy;
+  font-style: italic;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 58px;
+
+}
+
+.card {
+  list-style: none;
+  padding: 20px;
+  display: grid;
+}
+
+
+.card-title {
+  text-transform: uppercase;
+  font-size: 24px;
+  margin-bottom: 0;;
+  text-align: center;
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: bold;
+  color: #333333;
+}
+
+
+.card-image {
+  height: 180px;
+  margin: 0 auto;
+}
+
+#pokedex  {
+  padding-inline-start: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 20px;
+}
+
+.container {
+  padding: 40px;
+  margin: 0 auto;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.button {
+  padding: 10px 20px;
+  margin: 0 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4c4c4c;
+  color: rgb(255, 255, 255);
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-weight: bold;
+}
+
+.button:hover {
+  background-color: #292929;
+}
+
+.button-secondary {
+  background-color: #878787;
+}
+
+.button-secondary:hover {
+  background-color: #ff65fa;
+}
+
+.favorites-container {
+  width: 50%;
+  margin-top: 20px;
+  border: 1px solid #cccccc;
+  padding: 10px;
+  overflow-y: auto;
+  max-height: 200px;
+}
+
+.favorite-item {
+  margin-bottom: 5px;
+}
+
+#favoritesList{
+  display: flex;
+}
+
+.backToSearchButtonc {
+  background-color: #727272;
+  color: #FFFFFF;
+  margin: 10px;
+  padding: 10px 20px;
+  border: none;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.backToSearchButtonc:hover {
+  background-color: #595959;
+}
+
+.containerfav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+}
+
+.containerfav h1{
+  font-size: 44px;
+  margin-bottom: 12px;
+}
+
+.scrollTopButton {
+  width: 60px;
+  height: 60px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: transparent;
+  color: #FFFFFF;
+  padding: 10px 20px;
+  border: 2px solid white;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.scrollTopButton:hover {
+  background-color: #474747;
+}
